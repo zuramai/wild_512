@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wild 512</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="canvas">
+            <canvas id="canvas" width="720" height="480"></canvas>
+        </div>
+        <audio src="./music/background.mp3" id='bgm'></audio>
+        <div class="container">
+            <div class="mt-10"></div>
+            <div class="home">
+                <div class="logo">
+                    <img src="./images/logo.png" id='logo' alt="" srcset="">
+                    <img src="./images/logo.png" id='logo2' alt="" srcset="">
+                </div>
+                <div class="instructions">
+                    <h3>Instructions</h3>
+                    <div class="divider"></div>
+                    <ul>
+                        <li>Player using WASD or Arrow Keys to play game. </li>
+                        <li>Every time the player moves, game will spawn new node of value 2 or 4 in any empty space inside the 4x4 board.</li>
+                        <li>Every 8 move, new node that is spawned will pop up as wild node that can be combined with any node.</li>
+                        <li>Player will lose if the player cannot move in any of the 4 direction, cannot move means that anything the player press will not change the state of the board because there are no nodes that can be combined anymore.</li>
+                        <li>Player will win the game if there is at least one node with value of 512.</li>
+                    </ul>
+                </div>
+                <button class="btn" id='btn-start'>Start Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
