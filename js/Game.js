@@ -415,8 +415,6 @@ class Game {
     * 
     */
     render() {
-        // this.ctx.clearRect(0,0,this.canvas.width,this.canvas.height)
-    
         this.ctx.fillStyle="#fff";
         this.ctx.font = "32px Arial";
         this.ctx.fillText('Your Score: '+this.score, 100,100);
