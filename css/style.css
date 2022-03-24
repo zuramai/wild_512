@@ -40,9 +40,6 @@
     height: 75px;
     display: none;;
 }
-#canvas {
-    /* display:none */
-}
 .instructions {
     padding: 20px;
 }
